@@ -4,6 +4,8 @@
 
 OpenSPP is an open-source project that aims to streamline the management of social protection programs. It can be used on its own or in conjunction with other services.
 
+The repository will contain the code examples used in the OpenSPP Documentation.
+
 
 ## OpenSPP
 
