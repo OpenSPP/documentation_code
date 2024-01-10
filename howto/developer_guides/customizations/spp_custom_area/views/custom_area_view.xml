@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_spparea_form_inherit_spp_registrant_import" model="ir.ui.view">
+        <field name="name">spp.area.view.form.inherit</field>
+        <field name="model">spp.area</field>
+        <field name="inherit_id" ref="spp_area.view_spparea_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='kind']" position="after">
+                <field name="population" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
