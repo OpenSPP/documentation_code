@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_group_membership_salary_indicator" model="ir.ui.view">
+        <field name="name">view_group_membership_salary_indicator</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="g2p_registry_group.view_groups_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='group_membership_ids']/tree/field[@name='ended_date']" position="after">
+                <field name="salary" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

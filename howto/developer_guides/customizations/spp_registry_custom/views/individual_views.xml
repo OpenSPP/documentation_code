@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_individuals_salary_detail" model="ir.ui.view">
+        <field name="name">view_individuals_salary_detail</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="g2p_registry_individual.view_individuals_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='email']" position="after">
+                <field name="ind_currency_id" />
+                <field name="ind_salary" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
