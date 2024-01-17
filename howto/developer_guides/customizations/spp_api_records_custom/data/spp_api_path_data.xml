@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="area_path" model="spp_api.path">
+        <field name="name">Area</field>
+        <field name="model_id" ref="spp_area.model_spp_area" />
+        <field name="namespace_id" ref="spp_api_records.spp_api_namespace" />
+        <field name="description">GET Area</field>
+        <field name="method">get</field>
+        <field
+            name="field_ids"
+            eval="[(
+            6, 0, [
+                ref('spp_area.field_spp_area__parent_id'),
+                ref('spp_area.field_spp_area__name'),
+                ref('spp_area.field_spp_area__draft_name'),
+                ref('spp_area.field_spp_area__code'),
+            ]
+        )]"
+        />
+    </record>
+
+</odoo>
