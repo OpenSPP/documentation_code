@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="voucher_redemption_center" model="spp.service.type">
+        <field name="name">Voucher Redemption Center</field>
+    </record>
+
+    <record id="in_kind_goods_distribution" model="spp.service.type">
+        <field name="name">In-Kind goods distribution</field>
+    </record>
+
+    <record id="information_desk" model="spp.service.type">
+        <field name="name">Information Desk</field>
+    </record>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_service_points_custom" model="ir.ui.view">
+        <field name="name">view_service_points_custom</field>
+        <field name="model">spp.service.point</field>
+        <field name="inherit_id" ref="spp_service_points.view_service_points_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='disabled_reason']" position="after">
+                <div >
+                    <h2>Weekdays</h2>
+                </div>
+                <field name="weekday_time_start" widget="float_time" colspan="4" />
+                <field name="weekday_time_end" widget="float_time" colspan="4" />
+                <div>
+                    <h2>Weekends</h2>
+                </div>
+                <field name="weekend_time_start" widget="float_time" colspan="4" />
+                <field name="weekend_time_end" widget="float_time" colspan="4" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
